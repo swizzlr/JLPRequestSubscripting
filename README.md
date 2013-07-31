@@ -9,6 +9,7 @@ This returns a request with header `Accept: application/json, text/plain`:
 	[mutableRequest addValue:@"text/plain" forHTTPHeaderField:@"Accept"];
 
 This returns the default value based on device locale, probably `en;q=1` if you're reading this:
+
 	NSURLRequest * request = [[NSURLRequest alloc] init];
 	[request valueForHTTPHeaderField:@"Accept-Language"];
 	
@@ -16,13 +17,16 @@ This returns the default value based on device locale, probably `en;q=1` if you'
 ##The New Way:
 
 Just want it with one value? Assign a string.
+
 	NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
 	mutableRequest[@"Accept"] = @"application/json";
 	
 Want two? Pass in a collection.
+
 	mutableRequest[@"Accept"] = @[@"application/json", @"text/plain"];
 	
 And want to get the value out?
+
 	NSURLRequest * request = [[NSURLRequest alloc] init];
 	request[@"Accept-Language"];
 	
