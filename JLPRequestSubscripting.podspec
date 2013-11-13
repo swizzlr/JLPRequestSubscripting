@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.license      = 'Public Domain'
   s.author       = { "swizzlr" => "me@swizzlr.co" }
 
-  s.source       = { :git => "https://github.com/swizzlr/JLPRequestSubscripting.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/swizzlr/JLPRequestSubscripting.git", :tag => "#{s.version}" }
 
   s.source_files  = 'NSURLRequest+JLPURLSubscripting.{h,m}'
   
