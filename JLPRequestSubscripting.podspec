@@ -26,7 +26,5 @@ Pod::Spec.new do |s|
   
   s.framework  = 'Foundation'
   s.requires_arc = true
-  
-  spec.prefix_header_contents = '#import <JLPRequestSubscripting/JLPRequestSubscripting.h>'
 
 end
