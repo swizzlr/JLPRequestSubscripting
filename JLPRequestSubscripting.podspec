@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JLPRequestSubscripting"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Terrific HTTP header subscripting for NSURLRequests!"
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/swizzlr/JLPRequestSubscripting.git", :tag => "#{s.version}" }
 
-  s.source_files  = 'NSURLRequest+JLPURLSubscripting.{h,m}'
+  s.source_files  = 'NSURLRequest+JLPURLSubscripting.{h,m}', 'JLPRequestSubscripting.h'
   
   s.framework  = 'Foundation'
   s.requires_arc = true
